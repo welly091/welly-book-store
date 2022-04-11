@@ -1,0 +1,36 @@
+.searchbar{
+    background-image: url('https://media.cntraveler.com/photos/5f1093ff349fe2f21e475a56/16:9/w_2560,c_limit/TheBookLadyBookstore-Savannah.jpg');
+}
+
+.firstLayer{
+    text-align: center;
+}
+.book{
+    margin: 10px;
+}
+
+.bookImg{
+    padding: 5px;
+    width: 150px;
+    height: 250px;
+}
+
+.bookTitle{
+    font-size: 15px;
+    font-family: Sans-serif;
+    font-weight: bold;
+    align-items: center;
+    height: 60px;
+}
+
+#exhibitContainer {
+    background-color: blanchedalmond;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+#checkoutbackground{
+    background-color: blanchedalmond;
+}
