@@ -19,8 +19,15 @@ let booklist = [
     {id:17, price: 2.89, title:'Harry Potter and the Order of the Phoenix', src:'src/img/harry_potter_and_the_order_of_the_phoenix.jpg'}
 ]
 
-//Shopping cart list
-let shoppingCart = JSON.parse(sessionStorage.getItem('shoppingCart')) || sessionStorage.setItem('shoppingCart', JSON.stringify([]))
+//Create a shopping cart list in sessionStorage
+const createShopingCart = () =>{
+    if(JSON.parse(sessionStorage.getItem('shoppingCart')) == null) {
+        sessionStorage.setItem('shoppingCart', JSON.stringify([]))
+    }
+}
+createShopingCart()
+let shoppingCart = JSON.parse(sessionStorage.getItem('shoppingCart'))
+
 //item class for storing data in shopping cart list
 function item (id, price){
     this.id = id;

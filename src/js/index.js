@@ -28,16 +28,17 @@ function addToCart(id){
             return;
         }
     }
+    
 
     //...the item is not in the list, so add it to shopping cart.
     let bookItem = new item(bookId, booklist[bookId].price)
+    console.log('First Added')
     shoppingCart.push(bookItem)
     sessionStorage.setItem("shoppingCart", JSON.stringify(shoppingCart))
 }
 
 
 function callAddToCart(id) {
-    console.log(id)
    document.addEventListener('click', addToCart(id))
 } 
 
