@@ -12,7 +12,7 @@ const cart = () =>{
         td.innerHTML = `
             <th><img width='30px' height='50px' src='${booklist[id].src}'></img></th>
             <th>${booklist[id].title}</th>
-            <th>$${parseInt(obj.price)}</th>
+            <th>$${obj.price}</th>
             <th>${parseInt(obj.count)}</th>
             <th>$${totalEachBook.toFixed(2)}</th>
             <th><button class='btn bg-primary bg-gradient btn-md text-light' id=${id} onclick='deleteBook(this.id)'>Delete</botton></th>
